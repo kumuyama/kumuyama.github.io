@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background: #EEE;
+  width: 100vw;
+  height: auto;
+}
+
+
+header {
+  background: hsla(100, 100%, 100%, .5);
+  /* height: 120px; */
+}
+
+main {
+  width: 1800px;
+  /* background: gray; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.works {
+ width: 1800px;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.work {
+  width: 560px;
+  max-height: 560px;
+  object-fit: contain;
+ }
+
+ h1 {
+   /* background: blue; */
+   margin: 0;
+ }
+
+ p {
+  /* background: pink; */
+  margin: 0;
+}
+
