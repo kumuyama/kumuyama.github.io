@@ -1,12 +1,78 @@
+@media (min-width: 600px) and (max-width: 800px) {
+  body {
+    background: skyblue;
+  }
+}
+
+
+body {
+  margin: 0;
+  color: #08182c;
+  font-family: sans-serif;
+}
+
+
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  /* background: skyblue; */
+}
+
+main {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  /* background: green; */
+}
+
+
+.info {
+  text-align: center;
+  /* background: tomato; */
+  width: 160px;
+  margin: 0 32px 0 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  margin: 0 0 8px 0;
+  /* background: lightsalmon; */
+}
+
+
+.menu {
+  display: flex;
+  /* background: pink; */
+  justify-content: space-around;
+}
+
+i {
+  font-size: 24px;
+}
+
+i:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+
+a {
+  color: #08182c;
+}
+
+
 .works {
-  width: 50%;
+  width: 80%;
   margin: 16px auto;
 }
 
 
 .carousel {
   width: 100%;
-  height: 800px;
+  height: 100%;
   /* outline: 8px solid red; */
   overflow: hidden;
   position: relative;
@@ -87,18 +153,4 @@ nav .current {
   background: #999;
 }
 
-
-/* Rules for sizing the icon. */
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-
-/* Rules for using icons as black on a light background. */
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
-
-/* Rules for using icons as white on a dark background. */
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
