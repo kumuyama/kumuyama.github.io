@@ -42,9 +42,9 @@
   .menu {
     display: flex;
     font-size: 32px;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 32px auto auto auto;
-    width: 50%;
+    width: 70%;
   }
 
   i {
