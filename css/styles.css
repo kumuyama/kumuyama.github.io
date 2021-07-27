@@ -1,3 +1,6 @@
+
+/* スマホサイト */
+
 @media (max-width: 699px) {
 
   body {
@@ -6,6 +9,14 @@
     font-family: sans-serif;
   }
   
+
+  main {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
   a {
     color: #08182c;
   }
@@ -23,20 +34,41 @@
     transform: translateY(0);
   }
 
+  .info {
+    display: flex;
+    width: 90%;
+    margin: 64px auto 0;
+    /* background: green; */
+    justify-content: center;
+    flex-direction: column;
+  }
   
   h1 {
-    margin: 0;
     font-size: 24px;
-    margin: 64px 0 0 0;
+    margin: 0 0 32px 0;
+    margin: auto;
     /* background: lightsalmon; */
-    text-align: center;
-  }
-  
-  i {
-    font-size: 24px;
-    display: none;
+    /* text-align: center; */
+    /* padding: 0 0 0 40px; */
   }
 
+  /* .info > i {
+    padding: 8px;
+    font-size: 32px;
+    cursor: po;
+  } */
+  
+  .menu {
+    font-size: 32px;
+    margin: 32px auto auto auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  i {
+    margin: 0 16px;
+  }
   
   .works {
     width: 90%;
@@ -59,6 +91,8 @@
 
 }
 
+
+/* PCサイト */
 
 @media (min-width: 700px) {
   
@@ -106,6 +140,10 @@
     display: flex;
     /* background: pink; */
     justify-content: space-around;
+  }
+
+  .info > i {
+    display: none
   }
   
   i {
