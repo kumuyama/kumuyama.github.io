@@ -3,24 +3,56 @@
 
 @media (max-width: 699px) {
 
+/* スマホサイト全体 */
+
   body {
-    margin: 0;
     color: #08182c;
     font-family: sans-serif;
+    margin: 0;
   }
-  
 
   main {
-    width: 100%;
-    justify-content: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 100%;
   }
 
   a {
     color: #08182c;
   }
 
+
+ /* h1とmenu  */
+
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 64px auto 0;
+    width: 90%;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: auto;
+  }
+  
+  .menu {
+    display: flex;
+    font-size: 32px;
+    justify-content: space-around;
+    margin: 32px auto auto auto;
+    width: 50%;
+  }
+
+  i {
+    margin: 0 32px;
+  }
+
+
+/* 作品たち（Intersection Observer API） */
 
   img {
     opacity: 0;
@@ -34,55 +66,17 @@
     transform: translateY(0);
   }
 
-  .info {
-    display: flex;
-    width: 90%;
-    margin: 64px auto 0;
-    /* background: green; */
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  h1 {
-    font-size: 24px;
-    margin: 0 0 32px 0;
-    margin: auto;
-    /* background: lightsalmon; */
-    /* text-align: center; */
-    /* padding: 0 0 0 40px; */
-  }
-
-  /* .info > i {
-    padding: 8px;
-    font-size: 32px;
-    cursor: po;
-  } */
-  
-  .menu {
-    font-size: 32px;
-    margin: 32px auto auto auto;
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  i {
-    margin: 0 16px;
-  }
-  
   .works {
-    width: 90%;
     margin: 32px auto;
-    /* background: green; */
+    width: 90%;
   }
   
   ul {
+    height: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
-    height: 100%;
   }
-  
   
   #prev, #next {
     display: none;
@@ -92,95 +86,85 @@
 }
 
 
-/* PCサイト */
+/* PCサイト全体 */
 
 @media (min-width: 700px) {
   
 
   body {
-    margin: 0;
     color: #08182c;
     font-family: sans-serif;
+    margin: 0;
   }
   
-  
   .container {
-    display: flex;
-    width: 100%;
     align-items: center;
+    display: flex;
     justify-content: center;
-    /* background: skyblue; */
+    width: 100%;
   }
   
   main {
-    display: flex;
-    width: 60%;
     align-items: center;
-    justify-content: center;
-    /* background: green; */
-  }
-  
-  
-  .info {
-    text-align: center;
-    /* background: tomato; */
-    width: 160px;
-    margin: 0 32px 0 0;
-  }
-  
-  h1 {
-    margin: 0;
-    font-size: 24px;
-    margin: 0 0 8px 0;
-    /* background: lightsalmon; */
-  }
-  
-  
-  .menu {
     display: flex;
-    /* background: pink; */
-    justify-content: space-around;
+    justify-content: center;
+    width: 60%;
   }
 
-  .info > i {
-    display: none
-  }
-  
-  i {
-    font-size: 24px;
-  }
-  
-  i:hover {
-    cursor: pointer;
-    opacity: 70%;
-  }
-  
   a {
     color: #08182c;
   }
   
+
+/* h1とmenu */
+
+  .info {
+    margin: 0 32px 0 0;
+    text-align: center;
+    width: 160px;
+  }  
+
+  h1 {
+    font-size: 24px;
+    margin: 0 0 8px 0;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  i {
+    font-size: 24px;
+  }
+
+  i:hover {
+    cursor: pointer;
+    opacity: 70%;
+  }
+
+
+  /* 作品たち（カルーセル） */
   
   .works {
-    width: 80%;
     margin: 16px auto;
+    width: 80%;
   }
   
   
   .carousel {
-    width: 100%;
     height: 100%;
-    /* outline: 8px solid red; */
     overflow: hidden;
     position: relative;
+    width: 100%;
   }
   
-  
   ul {
+    display: flex;
+    height: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
-    height: 100%;
-    display: flex;
     transition: transform .3s;
   }
   
@@ -190,23 +174,23 @@
   }
   
   li img {
-    width: 100%;
     height: 100%;
     object-fit: contain;
+    width: 100%;
   }
   
   #prev,
   #next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
     background: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
     color: #fff;
     font-size: 32px;
     padding: 8px;
-    cursor: pointer;
-    border-radius: 1px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
   
   #prev:hover,
@@ -226,7 +210,6 @@
     display: none;
   }
   
-  
   nav {
     margin-top: 16px;
     text-align: center;
@@ -237,19 +220,17 @@
   }
   
   nav button {
-    border: none;
-    width: 16px;
-    height: 16px;
     background: #ddd;
+    border: none;
     border-radius: 50%;
     cursor: pointer;
+    height: 16px;
+    width: 16px;
   }
   
   nav .current {
     background: #999;
   }
-  
-  
   
 
 }
