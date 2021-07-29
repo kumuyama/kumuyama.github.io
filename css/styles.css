@@ -42,7 +42,7 @@
   .menu {
     display: flex;
     font-size: 32px;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 32px auto auto auto;
     width: 70%;
   }
@@ -131,7 +131,7 @@
   
   .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   i {
